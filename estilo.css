@@ -9,7 +9,8 @@
 }
 
 @media (max-width: 600px) {
-    .corpo, .cabecalho, .fundo-branco, .fundo-branco-post, .fundo-cinza, .rodape, .container-rodape, form {flex-direction: column;}
+    .corpo, .corpo-cinza .cabecalho, .fundo-branco, .fundo-branco-post, 
+    .fundo-cinza, .rodape, .container-rodape, form {flex-direction: column;}
 }
 
 /* ------------- */
@@ -29,7 +30,7 @@
     color: #FF4081;
     font-family: 'Ubuntu', sans-serif;
     font-size: 60px;
-    margin-left: 10px;
+    margin: 10px;
 }
 
 .titulo-post{
@@ -37,62 +38,63 @@
     font-family: 'Ubuntu', sans-serif;
     font-size: 50px;
     text-align: center;
-    margin-left: 10px;
-    line-height: 0.2;    
+    margin: 10px;  
 }
 
 .tv1{
     color: #009688;
     font-family: 'Ubuntu', sans-serif;
     font-size: 37px;
-    margin-left: 10px;    
+    margin: 10px;    
 }
 
 .t2 {
     color: #FF4081;
     font-family: 'Ubuntu', sans-serif;
     font-size: 35px;
-    margin-left: 10px;
+    margin: 10px;
 }
 
 .t3 {
     color: #FF4081;
     font-family: 'Ubuntu', sans-serif;
     font-size: 30px;
-    margin-left: 10px;
+    margin: 10px;
 }
 
 .tv2 {
     color: #009688;
     font-family: 'Ubuntu', sans-serif;
     font-size: 27px;
-    margin-left: 10px;
+    margin: 10px;
 }
 
 .p1 {
     color: #555555;
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
-    margin-left: 10px;
+    margin: 10px;
 }
 
 .p2 {
     color: #555555;
     font-family: 'Ubuntu', sans-serif;
     font-size: 17px;
-    margin-left: 10px;
+    margin: 10px;
 }
 
 .texto-post{
     color: black;
     font-family: 'Ubuntu', sans-serif;
     font-size: 18px;
+    margin: 10px;
 }
 
 .subtitulo-post{
     color: #419488;
     font-family: 'Ubuntu', sans-serif;
     font-size: 26px;
+    margin:10px;
 }
 
 .data-post{
@@ -151,11 +153,10 @@
     padding: 10px;
 }
 
-.fundo-cinza > div img{
+.imagem-banner-curso{
     width: auto;
     height: 270px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 .container-rodape {
@@ -190,7 +191,7 @@
     color: white;
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
-    margin-left: 10px;   
+    margin: 10px;   
     padding: 14px 50px;
     text-decoration: none;
     text-align: center;
@@ -207,6 +208,7 @@
     padding: 14px;
     text-decoration: none;
     text-align: center;
+    margin: 10px;
 }
 
 .botao-rosa {
@@ -218,6 +220,7 @@
     padding: 14px 50px;
     text-decoration: none;
     text-align: center;
+    margin: 10px;
 }
 
 .botao-branco {
@@ -228,7 +231,7 @@
     align-self: center;
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
-    margin-left: 10px;   
+    margin: 10px;   
     padding: 14px 50px;
     text-decoration: none;
     text-align: center;
@@ -275,19 +278,20 @@ input[type=submit]:hover {
 body {margin:0; padding:0;}
 
 video{
-    margin-left: 10px;
+    margin: 10px;
 }
 
-img{
-    margin-left: 10px;
-    margin-right: 10px;
+.imagem-post{
+    margin: 10px;
+    width: 100%;
+    height: auto;
 }
 
 nav a{
     color: white;
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
-    margin-left: 10px;
+    margin: 10px;
     text-decoration: none;
 }
 
