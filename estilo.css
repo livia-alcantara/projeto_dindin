@@ -1,11 +1,15 @@
 .corpo {
     background: white;
-    box-shadow: 0 0 3px rgba(black, 0.33);
-    height: calc(100vh - 10px);
+    align-items: center;
+}
+
+.corpo-cinza {
+    background: #f7f7f7;
+    align-items: center;
 }
 
 @media (max-width: 600px) {
-    .corpo, .cabecalho, .fundo-branco, .fundo-branco-post, .fundo-cinza, .rodape {flex-direction: column;}
+    .corpo, .cabecalho, .fundo-branco, .fundo-branco-post, .fundo-cinza, .rodape, .container-rodape, form {flex-direction: column;}
 }
 
 /* ------------- */
@@ -100,12 +104,16 @@
 }
 
 .rodape {
-    align-items: center;
     background: #419488;
     display: flex;
-    height: 207px;
-    justify-content: space-around;
-
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    padding: 2%;
+    flex-basis: 100px;
+	flex-grow: 200px;
+	flex-shrink: 0;
 }
 
 .fundo-branco {
@@ -158,7 +166,7 @@
 
 
 .container-rodape > div{
-    margin: 10px;
+    margin: 7px;
     align-items: center;
     color: white;
     font-family: 'Ubuntu', sans-serif;
@@ -186,6 +194,7 @@
     padding: 14px 50px;
     text-decoration: none;
     text-align: center;
+    width:fit-content;
 }
 
 .botao-verde-rodape {
@@ -195,7 +204,7 @@
     color: white;
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
-    padding: 14px 50px;
+    padding: 14px;
     text-decoration: none;
     text-align: center;
 }
@@ -225,34 +234,38 @@
     text-align: center;
 }
 
-
-input[type=text] {
-    box-sizing: border-box;
-    color: white;
-    border-radius: 7px;
-    float: left;
-    width: 75%;
-    height: 75%;
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    flex-basis: 200px;
+    flex-shrink: 3;
+    width: 300px;
 }
 
-textarea {
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #000000;
+    border-radius: 6px;
     box-sizing: border-box;
-    color: white;
-    border-radius: 7px;
-    float: left;
-    width: 200px;
-    height: 200px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+textarea{
+    flex-basis: 200px;
 }
 
 input[type=submit] {
     background-color: #FF4081;
     color: white;
     padding: 10px;
-    margin: 10px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     float: left;
+    width: 100px;
 }
   
 input[type=submit]:hover {
@@ -276,4 +289,12 @@ nav a{
     font-size: 20px;
     margin-left: 10px;
     text-decoration: none;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 5px;
+    background: #C4C4C4;
+    width: 80%;
 }
